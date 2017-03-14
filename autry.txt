@@ -1,0 +1,10 @@
+http://collections.theautry.org/MWEBimages/cat08_001/thumb/88_108_43.jpg	150	98
+http://collections.theautry.org/MWEBimages/ethnographic_019/thumb/2008_59_1.jpg	75	150
+http://collections.theautry.org/MWEBimages/ethnographic_019/thumb/2008_59_1detail5.jpg	59	150
+http://collections.theautry.org/MWEBimages/ethnographic_019/thumb/2008_59_1detail6.jpg	108	150
+http://collections.theautry.org/MWEBimages/ethnographic_019/thumb/2008_59_1detail3.jpg	72	150
+http://collections.theautry.org/MWEBimages/ethnographic_019/thumb/2008_59_1detail4.jpg	73	150
+http://collections.theautry.org/MWEBimages/ethnographic_019/thumb/2008_59_1detail1.jpg	77	150
+http://collections.theautry.org/MWEBimages/ethnographic_019/thumb/2008_59_1detail2.jpg	68	150
+http://collections.theautry.org/MWEBimages/art_005/thumb/4088_G_9.jpg	117	150
+http://collections.theautry.org/MWEBimages/cat08_026/thumb/93_187_3.jpg	118	150

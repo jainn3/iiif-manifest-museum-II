@@ -1,0 +1,7 @@
+https://gm-piction-live.s3.amazonaws.com/styles/primary_asset/s3/assets/0127.599_CANON_o6.jpg	952	750
+https://gm-piction-live.s3.amazonaws.com/styles/primary_asset/s3/assets/84.15_o6.jpg	546	750
+https://gm-piction-live.s3.amazonaws.com/styles/primary_asset/s3/assets/54.7399_o6.jpg	512	384
+https://gm-piction-live.s3.amazonaws.com/styles/primary_asset/s3/assets/54.3785_o6.jpg	1000	750
+https://gm-piction-live.s3.amazonaws.com/styles/primary_asset/s3/assets/TU2009.39.876_o6.jpg	939	750
+https://gm-piction-live.s3.amazonaws.com/styles/primary_asset/s3/assets/61-8796_o6.jpg	963	750
+https://gm-piction-live.s3.amazonaws.com/styles/primary_asset/s3/assets/TU2009.39.6060_o6.jpg	1150	750

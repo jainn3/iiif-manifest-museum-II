@@ -1,0 +1,10 @@
+http://artimage.princeton.edu/files/ProductionJpegs/INV29924.jpg	1536	2000
+http://artimage.princeton.edu/files/ProductionJpegs/INV20433.jpg	2000	1410
+http://artimage.princeton.edu/files/ProductionJpegs/INV29544.jpg	2000	1550
+http://artimage.princeton.edu/files/ProductionJpegs/2006-94.jpg	1294	1600
+http://artimage.princeton.edu/files/ProductionJpegs/2006-94.jpg	1294	1600
+http://artimage.princeton.edu/files/ProductionJpegs/2006-94.jpg	1294	1600
+http://artimage.princeton.edu/files/ProductionJpegs/INV20705.jpg	1472	2000
+http://artimage.princeton.edu/files/ProductionJpegs/INV20705.jpg	1472	2000
+http://artimage.princeton.edu/files/ProductionJpegs/INV20664.jpg	2000	1637
+http://artimage.princeton.edu/files/ProductionJpegs/2001-160-4.jpg	1000	800

@@ -1,0 +1,52 @@
+{
+  "structures": [
+    {
+      "canvases": [
+        "http://manifests.ydc2.yale.edu/canvas/Project-555_-CHAPTER_3_PAGE_2-jp2"
+      ], 
+      "@id": "http://manifests.ydc2.yale.edu/range/Project/ch555_", 
+      "@type": "sc:Range", 
+      "label": "Chapter 555_"
+    }
+  ], 
+  "label": "Manifest", 
+  "sequences": [
+    {
+      "viewingDirection": "Left-to-Right", 
+      "canvases": [
+        {
+          "height": 750, 
+          "width": 750, 
+          "images": [
+            {
+              "resource": {
+                "service": {
+                  "dcterms:conformsTo": "http://library.stanford.edu/iiif/image-api/1.1/conformance.html#level1", 
+                  "@id": "http://images.iiif.yale.edu/iiif/Project-555_-CHAPTER_3_PAGE_2-jp2"
+                }, 
+                "format": "image/jpeg", 
+                "height": 750, 
+                "width": 750, 
+                "@id": "http://images.iiif.yale.edu/iiif/Project-555_-CHAPTER_3_PAGE_2-jp2/full/full/0/native.jpg", 
+                "@type": "dctypes:Image"
+              }, 
+              "on": "http://manifests.ydc2.yale.edu/canvas/Project-555_-CHAPTER_3_PAGE_2-jp2", 
+              "motivation": "sc:painting", 
+              "@id": "http://manifests.ydc2.yale.edu/annotation/Project-555_-CHAPTER_3_PAGE_2-jp2", 
+              "@type": "oa:Annotation"
+            }
+          ], 
+          "label": "555_.CHAPTER_3_PAGE_2", 
+          "@id": "http://manifests.ydc2.yale.edu/canvas/Project-555_-CHAPTER_3_PAGE_2-jp2", 
+          "@type": "sc:Canvas"
+        }
+      ], 
+      "@id": "http://manifests.ydc2.yale.edu/sequence/Project/0", 
+      "@type": "sc:Sequence", 
+      "label": "Sequence 1"
+    }
+  ], 
+  "@context": "http://www.shared-canvas.org/ns/context.json", 
+  "@id": "http://manifests.ydc2.yale.edu/manifest/Project", 
+  "@type": "sc:Manifest"
+}
