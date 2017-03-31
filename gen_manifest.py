@@ -13,7 +13,7 @@ import downloadData
 
 class App(object):
     def __init__(self, config_file):
-        self.root_dir = os.environ['GEN_MANIFEST_HOME']
+        #self.root_dir = os.environ['GEN_MANIFEST_HOME']
         #self.root_dir = 'C:\Users\Nimesh\PycharmProjects\iiif-manifest-museum-II-master'
         #self.file_names_file = file_names_file
         self.config = self.get_config(config_file)
@@ -30,14 +30,15 @@ class App(object):
 
     def get_config(self, config_file):
         # Read default config
-        with open(os.path.join(self.root_dir, config_file)) as f:
+        config_file_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), config_file)
+        with open(config_file_path) as f:
             config = json.loads(f.read())
 
-        if not config_file:
+        if not config_file_path:
             return config
 
         # Read user config
-        with open(config_file) as f:
+        with open(config_file_path) as f:
             config.update(json.loads(f.read()))
 
         return config
