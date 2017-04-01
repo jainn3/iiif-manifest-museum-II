@@ -20,7 +20,7 @@ class FileNameParser(object):
             service_id = ""
             for part in url_parts[1:-4]:
                 service_id += part + "/"
-
+            service_id = service_id.strip('/')
             return ("https:/" + service_id)
         else:
             return filename
@@ -31,15 +31,28 @@ class FileNameParser(object):
             service_id = ""
             for part in url_parts[1:-5]:
                 service_id += part + "/"
-
+            service_id = service_id.strip('/')
             return ("https:/" + service_id)
         else:
             url_parts = filename.split('/')
             service_id = ""
             for part in url_parts[1:-1]:
                 service_id += part + "/"
+            service_id = service_id.strip('/')
             return ("https:/" + service_id)
 
+    def get_thumbnail(self,filename, museum):
+        if museum in 'ccma':
+            url_parts = filename.split('/')
+            thumbnail_id = ""
+            url_parts[-3] = '80,100'
+            for part in url_parts[1:-1]:
+                thumbnail_id += part + "/"
+            thumbnail_id += url_parts[-1]
+            thumbnail_id = thumbnail_id.strip('/')
+            return ("https:/" + thumbnail_id)
+        else:
+            return filename
 
     def parse(self, file_name, museum, caption):
         if self.createChapters:
@@ -97,6 +110,8 @@ class FileNameParser(object):
 
         #image_service_id = '%s/%s' % (self.imageServerRootUrl[museum], ident)
         image_service_id = _id
+
+        thumbnail_id = self.get_thumbnail(file_name,museum)
         result = dict()
         result['file_name'] = file_name
         result['page_padded'] = page_padded
@@ -106,6 +121,7 @@ class FileNameParser(object):
         result['image_id'] = image_id
         result['image_resource_id'] = image_resource_id
         result['image_service_id'] = image_service_id
+        result['thumbnail_id'] = thumbnail_id
         return result
 
     '''

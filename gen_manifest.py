@@ -2,7 +2,6 @@
 
 import json
 import os
-import sys
 import random, string
 
 from file_name_parser import FileNameParser
@@ -104,6 +103,8 @@ class App(object):
                     #print artist
                     try:
                         f_name = artist["image"]["value"]
+                        if 'ccma' in base:
+                            f_name = f_name.replace("512","512,")
                     except:
                         f_name = "unknown"
                         pass
@@ -173,7 +174,16 @@ class App(object):
                         }
                     }
                 }
-            ]
+            ],
+
+            'thumbnail': {
+                '@id': info['thumbnail_id'],
+                'service': {
+                    '@context': "http://iiif.io/api/image/2/context.json",
+                    '@id': info['image_service_id'],
+                    'profile': "http://iiif.io/api/image/2/level1.json"
+                }
+  }
         }
         return c
 
