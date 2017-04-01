@@ -40012,3 +40012,5 @@ http://americanart.si.edu/images/1984/1984.31.36_1a.jpg	1054	1400
 http://americanart.si.edu/images/1929/1929.8.427_1a.jpg	1400	1206
 http://americanart.si.edu/images/1929/1929.8.427_2a.jpg	1400	1151
 http://americanart.si.edu/images/1981/1981.109.3_1a.jpg	635	832
+http://americanart.si.edu/images/1983/1983.63.797_1a.jpg	1400	1119
+http://americanart.si.edu/images/1979/1979.144.75_2a.jpg	1400	1196
