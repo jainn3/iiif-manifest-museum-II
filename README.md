@@ -9,3 +9,4 @@ A script to create a manifest from image files.
 3. Run gen_manifest.py
 
 The output will be in the museum-manifest directory.
+[CCMA manifest file](museum-manifests/ccma.json)
