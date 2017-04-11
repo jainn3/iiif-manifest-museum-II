@@ -10,6 +10,7 @@
                            "autry": "<autry_manifestServerRootUrl>","wam": "<wam_manifestServerRootUrl>","puam": "<puam_imageserverRootUrl>",
                         "dma": "<dma_manifestServerRootUrl>","cbm": "<cbm_manifestServerRootUrl>","npg": "<npg_manifestServerRootUrl>",
   "ccma": "<ccma manifestServerRootUrl>"},
+  "thumbnailServerRootUrl":"",
   
   "projectPath": "",
   "manifestLabel": "Manifest",

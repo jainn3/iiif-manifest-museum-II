@@ -51,7 +51,7 @@ class App(object):
                 files.append(file_name)
         '''
         manifest = self.build_manifest(files)
-        print json.dumps(manifest, indent=2)
+        #print json.dumps(manifest, indent=2)
 
     def build_manifest(self, files):
         config = self.config
@@ -102,6 +102,11 @@ class App(object):
             for artist in res:
                     #print artist
                     try:
+                        uri_key =  artist["x"]["value"].split("/")[-1]
+                    except:
+                        uri_key = "unknown"
+                        pass
+                    try:
                         f_name = artist["image"]["value"]
                         if 'ccma' in base:
                             f_name = f_name.replace("512","512,")
@@ -113,11 +118,15 @@ class App(object):
                     except:
                         caption = "unknown"
                         pass
-                    file_info = self.fileNameParser.parse(f_name,base, caption)
+                    if f_name in self.blackList:
+                        continue
+                    file_info = self.fileNameParser.parse(f_name, base, caption, uri_key)
                     if not file_info:
+                        self.fob.write(base + '\t' + f_name + '\n')
                         continue
-                    if file_info['file_name'] in self.blackList:
-                        continue
+
+                    #if file_info['file_name'] in self.blackList:
+                        #continue
                     canvas = self.build_canvas(file_info, caption)
                     if canvas:
                         m['sequences'][0]['canvases'].append(canvas)
@@ -148,7 +157,7 @@ class App(object):
             'label':caption,
             'width': width,
             'height': height,
-            'license': license,
+            #'license': license,
             'metadata': [
                 {
                     'label': 'caption',
@@ -170,23 +179,29 @@ class App(object):
                         'height': height,
                         'service': {
                             '@id': info['image_service_id'],
-                            'dcterms:conformsTo': 'http://library.stanford.edu/iiif/image-api/1.1/conformance.html#level1'
+                            #'dcterms:conformsTo': 'http://library.stanford.edu/iiif/image-api/1.1/conformance.html#level1'
                         }
                     }
                 }
             ],
 
+            'thumbnail':info['thumbnail_url']
+        }
+        return c
+
+    '''
             'thumbnail': {
                 '@id': info['thumbnail_id'],
+                '@type': 'dctypes:Image',
+
                 'service': {
                     '@context': "http://iiif.io/api/image/2/context.json",
                     '@id': info['image_service_id'],
                     'profile': "http://iiif.io/api/image/2/level1.json"
                 }
-  }
-        }
-        return c
+                     }
 
+    '''
     '''
     def create_range(self, file_info):
         config = self.config
